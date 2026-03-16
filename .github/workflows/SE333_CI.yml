@@ -1,0 +1,27 @@
+name: SE333 CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Run Maven
+        run: mvn clean verify
+
+      - name: Upload JaCoCo
+        uses: actions/upload-artifact@v3
+        with:
+          name: jacoco-report
+          path: target/site/jacoco/jacoco.xml
