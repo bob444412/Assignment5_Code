@@ -14,7 +14,7 @@ public class PlaywrightTest {
 
             BrowserContext context = browser.newContext(
                     new Browser.NewContextOptions()
-                            .setRecordVideoDir(Paths.get("videos/"))
+                            .setRecordVideoDir(Paths.get("target/videos/"))
                             .setRecordVideoSize(1280, 720)
             );
 
@@ -100,7 +100,9 @@ public class PlaywrightTest {
 
             assert page.locator("text=empty").isVisible();
 
+            context.close();
             browser.close();
+
         }
     }
 }
