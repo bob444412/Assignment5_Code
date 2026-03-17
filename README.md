@@ -1,21 +1,17 @@
+Assignment 5
+
+Workflow Status Badge
 ![CI](https://github.com/bob444412/Assignment5_Code/actions/workflows/SE333_CI.yml/badge.svg)
 
+Overview
 
-Assignment 5 – Playwright Testing with MCP
-Project Overview
-This project demonstrates automated UI testing using Playwright in Java. It includes both manual UI testing and AI-assisted testing using the Playwright MCP agent. The tests simulate a user workflow on the DePaul bookstore website, including searching for products, adding items to the cart, and verifying results.
+This project shows automated UI testing using Playwright in Java. In this manual UI testing and AI - assisted testing using Playwright MCP agent. This test simulates a user on Depaul's bookstore website, such as searching, selecting, adding to cart and viewing cart. Issues with opening cart due to Denined Access. 
 
-
-The project is configured with GitHub Actions to automatically run tests on every push. The workflow installs dependencies, sets up Playwright, and executes all tests using Maven.
-
+Workflow link, Automatically pushes to github and tells if code is passed or failed.
 https://github.com/bob444412/Assignment5_Code/actions
 
+Reflection
 
-Reflection: Manual vs AI-Assisted UI Testing
+Manual UI testing used Java code using Playwright to simulate user actions. This allowed access to the entire test logic but took more time when dealing with bugs and errors. AI-assisted UI testing used Playwright MCP agent which simplified this process. Instead of writing the code manually i described my workflow in simple commands. The AI - assistant generated the Playwright test code automatically which made the process faster. In terms of ease, the AI-assisted was more efficient since reduced the time needed to manual code . But the generated tests sometimes needed adjustments to improve accuracy. Manual UI tests were more precise since they were written step by step and in depth. Maintenance view, AI tests were quicker to change but harder to debug while the manual tests are easier to maintain because of their clear structure.
 
-
-Manual UI testing required writing Java code using Playwright to simulate user actions such as navigating pages, locating elements, and verifying results. This process provided full control over the test logic but required more time and effort, especially when dealing with selectors and debugging errors.
-AI-assisted UI testing using the Playwright MCP agent simplified this process. Instead of writing code manually, I described the workflow in natural language, such as searching for earbuds, adding items to the cart, and verifying results. The AI generated the Playwright test code automatically, which made development faster and easier.
-In terms of ease of use, the AI-assisted approach was more efficient and reduced the need for manual coding. However, the generated tests sometimes required adjustments to improve accuracy and reliability. Manual tests were more stable and precise since they were explicitly written.
-From a maintenance perspective, AI-generated tests are quicker to update but may be harder to debug, while manual tests are easier to maintain long-term due to their clear structure.
-Overall, AI-assisted testing improves productivity, while manual testing ensures better control and reliability. A combination of both approaches provides the best results.
+Conclusion, i think both should be combined since one lacks what the other needs.
