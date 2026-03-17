@@ -1,4 +1,5 @@
-package org.example;
+package playwrightTraditional;
+
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
 
